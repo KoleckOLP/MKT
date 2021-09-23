@@ -13,7 +13,7 @@ CallTheSnake()
 {
     test := """" . clipboard . """"
 
-    RunWait, python Morse.py %test%
+    RunWait, pythonw Morse.pyw %test%
 
     MsgBox, %clipboard%
 }
